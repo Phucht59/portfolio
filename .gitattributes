@@ -1,0 +1,5 @@
+* text=auto
+
+*.bin.gz binary
+*.glb binary
+*.hdr binary

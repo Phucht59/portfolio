@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Trần Hoàng Phúc — Phân tích dữ liệu / Khoa học dữ liệu",
+    "description": "Sinh viên Khoa học Dữ liệu xây dựng sản phẩm dữ liệu đầu-cuối đáng tin cậy — từ làm sạch và kiểm định dữ liệu đến học máy, tìm kiếm và hỗ trợ quyết định."
+  },
+  "nav": {
+    "work": "Dự án",
+    "about": "Giới thiệu",
+    "resume": "CV",
+    "home": "Trang chủ",
+    "skip": "Bỏ qua đến nội dung",
+    "openIndex": "Mở mục lục dự án",
+    "closeIndex": "Đóng mục lục dự án",
+    "projectIndex": "Mục lục dự án"
+  },
+  "lang": {
+    "en": "EN",
+    "vi": "VI",
+    "group": "Ngôn ngữ"
+  },
+  "hero": {
+    "displayName": "TRẦN HOÀNG PHÚC",
+    "viewWork": "Xem dự án",
+    "downloadCv": "Tải CV",
+    "cvUnavailable": "Tải CV chưa khả dụng cho đến khi có file PDF cuối cùng."
+  },
+  "home": {
+    "featuredWork": "Dự án nổi bật",
+    "moreWork": "Thêm dự án",
+    "about": "Giới thiệu",
+    "viewCaseStudy": "Xem case study",
+    "teamProject": "Dự án nhóm",
+    "members": "{{count}} thành viên",
+    "footerHeadline": "Hãy làm việc với dữ liệu.",
+    "slideStatus": "Trang {{current}} / {{total}}: {{title}}",
+    "education": "Cử nhân Khoa học Dữ liệu",
+    "educationMeta": "HUFLIT · Dự kiến 2026",
+    "skills": "Python · SQL · Pandas · PostgreSQL · PyTorch · NLP",
+    "carouselPrev": "Dự án nổi bật trước",
+    "carouselNext": "Dự án nổi bật sau",
+    "carouselLabel": "Dự án nổi bật"
+  },
+  "case": {
+    "kicker": "Case study",
+    "limitations": "Giới hạn",
+    "backToWork": "Về trang dự án",
+    "next": "Tiếp",
+    "previous": "Trước",
+    "source": "Xem mã nguồn trên GitHub",
+    "sourcePending": "Mã nguồn sau khi dọn repository",
+    "sourceReview": "Mã nguồn sau khi chủ sở hữu rà soát",
+    "attribution": "Nguồn dữ liệu",
+    "role": "Vai trò",
+    "year": "Năm",
+    "stack": "Công nghệ",
+    "evidence": "Bằng chứng",
+    "workflow": "Quy trình",
+    "diagramStudent": "Kiến trúc lai: đặc trưng dạng bảng và bộ điều hợp thời gian đưa dữ liệu vào hai nhánh CNN và BiLSTM song song, sau đó hợp nhất có cổng softmax, đặt ngưỡng rủi ro và chuyển sang đề xuất hỗ trợ.",
+    "diagramRestaurant": "Truy hồi lai: BM25 xếp hạng từ khóa và Sentence Transformer cùng FAISS xếp hạng ngữ nghĩa chạy song song, rồi hợp nhất bằng weighted reciprocal-rank fusion trước khi phân tích cảm xúc.",
+    "diagramFace": "Quy trình chấm công: ảnh tham chiếu đã đăng ký, ảnh webcam, phát hiện và căn chỉnh, embedding ArcFace, đối sánh cosine, rồi check-in hoặc check-out. Chỉ dùng ký hiệu trừu tượng; không hiển thị khuôn mặt thật.",
+    "diagramFlight": "Hành trình đặt vé: tìm kiếm, chọn chuyến, giữ ghế, thông tin hành khách, kiểm tra checkout, thanh toán mô phỏng và tạo vé điện tử.",
+    "invalidActions": "hành động không hợp lệ",
+    "heldOut": "trường hợp giữ lại",
+    "supportRanking": "xếp hạng hỗ trợ",
+    "distinctDatasets": "UCI và OULAD là hai tập dữ liệu khác nhau và không được xem là tương đương.",
+    "yelpAttribution": "Yelp Open Dataset",
+    "livenessBanner": "Kiểm tra liveness đang bị bỏ qua và chống giả mạo chưa hoạt động.",
+    "paymentBanner": "Thanh toán được mô phỏng. Không tuyên bố có cổng thanh toán production hay xử lý giao dịch thật.",
+    "teamBanner": "Dự án nhóm — 4 thành viên"
+  },
+  "notFound": {
+    "title": "Không tìm thấy trang",
+    "body": "Tuyến này không nằm trong portfolio. Hãy dùng trang chủ hoặc một trong bốn case study.",
+    "home": "Về trang chủ"
+  },
+  "nodes": {
+    "data": "Dữ liệu",
+    "hybrid": "Lai",
+    "risk": "Rủi ro",
+    "support": "Hỗ trợ",
+    "query": "Truy vấn",
+    "retrieve": "Truy hồi",
+    "rank": "Xếp hạng",
+    "sentiment": "Cảm xúc",
+    "webcam": "Webcam",
+    "faceMatch": "Khớp mặt",
+    "attendance": "Chấm công",
+    "search": "Tìm kiếm",
+    "seatHold": "Giữ ghế",
+    "checkout": "Checkout",
+    "eticket": "Vé điện tử"
+  }
+}

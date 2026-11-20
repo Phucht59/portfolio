@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Trần Hoàng Phúc — Data Analyst / Data Science",
+    "description": "Data Science student building reliable, end-to-end data products — from data cleaning and validation to machine learning, search, and decision support."
+  },
+  "nav": {
+    "work": "Work",
+    "about": "About",
+    "resume": "Resume",
+    "home": "Home",
+    "skip": "Skip to content",
+    "openIndex": "Open project index",
+    "closeIndex": "Close project index",
+    "projectIndex": "Project index"
+  },
+  "lang": {
+    "en": "EN",
+    "vi": "VI",
+    "group": "Language"
+  },
+  "hero": {
+    "displayName": "TRAN HOANG PHUC",
+    "viewWork": "View Work",
+    "downloadCv": "Download CV",
+    "cvUnavailable": "The CV download is unavailable until the final PDF is supplied."
+  },
+  "home": {
+    "featuredWork": "Featured Work",
+    "moreWork": "More Work",
+    "about": "About",
+    "viewCaseStudy": "View Case Study",
+    "teamProject": "Team Project",
+    "members": "{{count}} Members",
+    "footerHeadline": "Let’s work with data.",
+    "slideStatus": "Slide {{current}} of {{total}}: {{title}}",
+    "education": "Bachelor of Data Science",
+    "educationMeta": "HUFLIT · Expected 2026",
+    "skills": "Python · SQL · Pandas · PostgreSQL · PyTorch · NLP",
+    "carouselPrev": "Previous featured project",
+    "carouselNext": "Next featured project",
+    "carouselLabel": "Featured work"
+  },
+  "case": {
+    "kicker": "Case Study",
+    "limitations": "Limitations",
+    "backToWork": "Back to work",
+    "next": "Next",
+    "previous": "Previous",
+    "source": "View source on GitHub",
+    "sourcePending": "Source after repository cleanup",
+    "sourceReview": "Source available after owner review",
+    "attribution": "Attribution",
+    "role": "Role",
+    "year": "Year",
+    "stack": "Stack",
+    "evidence": "Evidence",
+    "workflow": "Workflow",
+    "diagramStudent": "Hybrid architecture: tabular features and a temporal adapter feed parallel CNN and BiLSTM branches, then softmax-gated fusion, a risk threshold, and support routing.",
+    "diagramRestaurant": "Hybrid retrieval: BM25 lexical ranking and Sentence Transformer plus FAISS semantic ranking run in parallel, then merge through weighted reciprocal-rank fusion before sentiment analysis.",
+    "diagramFace": "Attendance workflow: enrolled reference, webcam capture, detect and align, ArcFace embedding, cosine match, then check-in or check-out. Abstract symbols only; no real face is shown.",
+    "diagramFlight": "Booking journey: search, flight selection, seat holding, passenger information, checkout validation, simulated payment, and e-ticket generation.",
+    "invalidActions": "invalid actions",
+    "heldOut": "held-out cases",
+    "supportRanking": "support ranking",
+    "distinctDatasets": "UCI and OULAD are distinct datasets and are not treated as equivalent.",
+    "yelpAttribution": "Yelp Open Dataset",
+    "livenessBanner": "Liveness detection is bypassed and anti-spoofing is not active.",
+    "paymentBanner": "Payment is simulated. No production payment gateway or real transaction processing is claimed.",
+    "teamBanner": "Team project — 4 members"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "This route is not part of the portfolio. Use the homepage or one of the four case studies.",
+    "home": "Back to homepage"
+  },
+  "nodes": {
+    "data": "Data",
+    "hybrid": "Hybrid",
+    "risk": "Risk",
+    "support": "Support",
+    "query": "Query",
+    "retrieve": "Retrieve",
+    "rank": "Rank",
+    "sentiment": "Sentiment",
+    "webcam": "Webcam",
+    "faceMatch": "Face match",
+    "attendance": "Attendance",
+    "search": "Search",
+    "seatHold": "Seat hold",
+    "checkout": "Checkout",
+    "eticket": "E-ticket"
+  }
+}

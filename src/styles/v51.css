@@ -1,0 +1,5 @@
+/* V5.1 grading: retain editorial dimensions and actual DOM content. */
+html[data-home-world] .full-world-reading-wash{background:linear-gradient(90deg,#f7f3ea22,#f7f3ea2c 28%,#f7f3ea05 52%,transparent 66%)}
+html[data-home-world][data-world-theme=moonlight] .full-world-reading-wash{background:linear-gradient(90deg,#0c1b2a11,#0c1b2a38 25%,transparent 55%)}
+html[data-home-world] .site-nav a,html[data-home-world] .lang-switch button,html[data-home-world] .btn,html[data-home-world] .label{font-family:var(--font-body)}
+@media(max-width:600px){html[data-home-world] .full-world-reading-wash{background:linear-gradient(90deg,#f7f3eaaa,#f7f3ea55 45%,transparent 85%)}html[data-home-world][data-world-theme=moonlight] .full-world-reading-wash{background:linear-gradient(90deg,#0c1b2abb,#0c1b2a66 45%,transparent 85%)}}

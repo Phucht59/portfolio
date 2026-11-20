@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "site": {
+    "name": "Trần Hoàng Phúc",
+    "role": {
+      "en": "Data Analyst / Data Science",
+      "vi": "Phân tích dữ liệu / Khoa học dữ liệu"
+    },
+    "location": {
+      "en": "Ho Chi Minh City, Vietnam",
+      "vi": "Thành phố Hồ Chí Minh, Việt Nam"
+    },
+    "availability": {
+      "en": "Open to internship opportunities",
+      "vi": "Sẵn sàng cho cơ hội thực tập"
+    },
+    "intro": {
+      "en": "Data Science student building reliable, end-to-end data products — from data cleaning and validation to machine learning, search, and decision support.",
+      "vi": "Sinh viên Khoa học Dữ liệu xây dựng sản phẩm dữ liệu đầu-cuối đáng tin cậy — từ làm sạch và kiểm định dữ liệu đến học máy, tìm kiếm và hỗ trợ quyết định."
+    },
+    "about": {
+      "en": "I’m Trần Hoàng Phúc, a Data Science student at HUFLIT. I build data systems that are accurate, explainable, and useful in real workflows.",
+      "vi": "Tôi là Trần Hoàng Phúc, sinh viên Khoa học Dữ liệu tại HUFLIT. Tôi xây dựng các hệ thống dữ liệu chính xác, có thể giải thích và hữu ích trong quy trình thực tế."
+    },
+    "contact": {
+      "email": "tranhoangphuc05092005@gmail.com",
+      "github": "https://github.com/Phucht59",
+      "linkedin": null
+    }
+  },
+  "projects": [
+    {
+      "id": "student-risk",
+      "number": "01",
+      "route": "/work/student-risk",
+      "repository": "prediction_student",
+      "sourceStatus": "enabled",
+      "featured": true,
+      "type": {
+        "en": "Graduation Thesis",
+        "vi": "Khóa luận tốt nghiệp"
+      },
+      "year": "2026",
+      "title": {
+        "en": "Early Student Risk Prediction & Recommendation System",
+        "vi": "Hệ thống dự đoán sớm rủi ro học tập và đề xuất hỗ trợ"
+      },
+      "summary": {
+        "en": "Early-stage risk prediction across UCI and OULAD, followed by safe support-action ranking.",
+        "vi": "Dự đoán sớm rủi ro trên UCI và OULAD, sau đó xếp hạng hành động hỗ trợ an toàn."
+      },
+      "headlineMetrics": [
+        {
+          "label": "AP",
+          "value": 0.806,
+          "qualifier": "OULAD @35%"
+        },
+        {
+          "label": "NDCG@3",
+          "value": 0.888,
+          "qualifier": "support ranking"
+        }
+      ],
+      "stack": ["Python", "PyTorch", "PostgreSQL", "Pandas"],
+      "chapters": [
+        {
+          "number": "01",
+          "title": {
+            "en": "Problem & data",
+            "vi": "Bài toán & dữ liệu"
+          },
+          "body": {
+            "en": "The project compares staged prediction on UCI student records with temporal prediction on OULAD virtual-learning activity. UCI contains 1,044 records grouped into 662 students across stages S0–S2. OULAD contains 32,593 enrolments, 28,785 students, and more than 10 million VLE events.",
+            "vi": "Dự án so sánh dự đoán theo giai đoạn trên dữ liệu sinh viên UCI với dự đoán chuỗi thời gian từ hoạt động học trực tuyến OULAD. UCI có 1.044 bản ghi thuộc 662 sinh viên qua S0–S2. OULAD có 32.593 lượt ghi danh, 28.785 sinh viên và hơn 10 triệu sự kiện VLE."
+          }
+        },
+        {
+          "number": "02",
+          "title": {
+            "en": "Hybrid architecture",
+            "vi": "Kiến trúc lai"
+          },
+          "body": {
+            "en": "Static and aggregate features form a tabular branch. A temporal adapter feeds parallel CNN and BiLSTM branches. Softmax-gated fusion produces a risk probability, which is thresholded before support routing.",
+            "vi": "Đặc trưng tĩnh và tổng hợp tạo thành nhánh bảng. Bộ điều hợp thời gian đưa dữ liệu vào hai nhánh CNN và BiLSTM song song. Cơ chế hợp nhất có cổng softmax tạo xác suất rủi ro trước khi đặt ngưỡng và chuyển sang đề xuất hỗ trợ."
+          }
+        },
+        {
+          "number": "03",
+          "title": {
+            "en": "Evaluation & support ranking",
+            "vi": "Đánh giá & xếp hạng hỗ trợ"
+          },
+          "body": {
+            "en": "Prediction is reported at multiple observation cutoffs, while recommendations are evaluated on an independent held-out set. Ranking quality is measured; causal intervention impact has not been established.",
+            "vi": "Dự đoán được báo cáo ở nhiều mốc quan sát, còn đề xuất được đánh giá trên tập giữ lại độc lập. Dự án đo chất lượng xếp hạng; chưa xác lập tác động nhân quả của can thiệp."
+          }
+        }
+      ],
+      "evidence": {
+        "uciAveragePrecision": {
+          "stages": ["S0", "S1", "S2"],
+          "values": [0.455, 0.821, 0.91]
+        },
+        "ouladAveragePrecision": {
+          "cutoffsPercent": [20, 35, 50, 75, 100],
+          "values": [0.762, 0.806, 0.848, 0.889, 0.92]
+        },
+        "recommendation": {
+          "precisionAt1": 0.992,
+          "ndcgAt3": 0.888,
+          "heldOutCases": 632,
+          "invalidActions": 0,
+          "usesFullCourseCutoff": false
+        }
+      },
+      "requiredCaveats": {
+        "en": [
+          "The 100% observation cutoff is not used for recommendation.",
+          "The recommendation evaluation measures ranking relevance, not causal intervention effect."
+        ],
+        "vi": [
+          "Mốc quan sát 100% không được dùng để tạo đề xuất.",
+          "Đánh giá đề xuất đo mức độ phù hợp của xếp hạng, không chứng minh tác động nhân quả của can thiệp."
+        ]
+      }
+    },
+    {
+      "id": "restaurant-search",
+      "number": "02",
+      "route": "/work/restaurant-search",
+      "repository": "IR_Course_Project",
+      "sourceStatus": "enabled",
+      "featured": true,
+      "type": {
+        "en": "Information Retrieval Course Project",
+        "vi": "Đồ án môn Truy hồi Thông tin"
+      },
+      "title": {
+        "en": "Restaurant Search & Sentiment Analytics",
+        "vi": "Tìm kiếm nhà hàng & phân tích cảm xúc"
+      },
+      "summary": {
+        "en": "A hybrid restaurant search experience combining lexical and semantic retrieval with sentiment and aspect analysis.",
+        "vi": "Trải nghiệm tìm kiếm nhà hàng lai kết hợp truy hồi từ khóa, truy hồi ngữ nghĩa và phân tích cảm xúc theo khía cạnh."
+      },
+      "headlineMetrics": [
+        {
+          "label": "Accuracy",
+          "value": 0.86,
+          "display": "≈86%",
+          "qualifier": "3-class LinearSVC sentiment"
+        }
+      ],
+      "stack": ["Python", "scikit-learn", "FAISS", "Streamlit"],
+      "chapters": [
+        {
+          "number": "01",
+          "title": {
+            "en": "Search problem",
+            "vi": "Bài toán tìm kiếm"
+          },
+          "body": {
+            "en": "The system searches Yelp restaurant-review data while balancing exact term matches with semantic similarity.",
+            "vi": "Hệ thống tìm kiếm trên dữ liệu đánh giá nhà hàng Yelp, cân bằng giữa khớp từ khóa chính xác và tương đồng ngữ nghĩa."
+          }
+        },
+        {
+          "number": "02",
+          "title": {
+            "en": "Hybrid retrieval",
+            "vi": "Truy hồi lai"
+          },
+          "body": {
+            "en": "BM25 supplies lexical retrieval. Sentence Transformer embeddings indexed by FAISS supply semantic retrieval. Weighted reciprocal-rank fusion combines both ranked lists.",
+            "vi": "BM25 đảm nhiệm truy hồi từ khóa. Embedding Sentence Transformer được lập chỉ mục bằng FAISS đảm nhiệm truy hồi ngữ nghĩa. Weighted reciprocal-rank fusion hợp nhất hai danh sách xếp hạng."
+          }
+        },
+        {
+          "number": "03",
+          "title": {
+            "en": "Sentiment & experience",
+            "vi": "Cảm xúc & trải nghiệm"
+          },
+          "body": {
+            "en": "A three-class LinearSVC model provides overall sentiment, while VADER and an aspect dictionary summarize Food, Service, Ambience, and Price in a Streamlit dashboard.",
+            "vi": "Mô hình LinearSVC ba lớp cung cấp cảm xúc tổng thể, còn VADER và từ điển khía cạnh tóm tắt Food, Service, Ambience và Price trên dashboard Streamlit."
+          }
+        }
+      ],
+      "evidence": {
+        "retrievalPipeline": [
+          "BM25",
+          "Sentence Transformer",
+          "FAISS",
+          "weighted RRF"
+        ],
+        "sentiment": {
+          "model": "LinearSVC",
+          "classes": 3,
+          "approximateAccuracy": 0.86,
+          "labelSource": "Yelp star ratings"
+        },
+        "aspects": ["Food", "Service", "Ambience", "Price"],
+        "dashboard": "Streamlit"
+      },
+      "requiredCaveats": {
+        "en": [
+          "Sentiment labels are derived from star ratings.",
+          "Do not publish a numeric retrieval lift, MAP, nDCG, or dataset count unless a final evaluated artifact is supplied."
+        ],
+        "vi": [
+          "Nhãn cảm xúc được suy ra từ số sao đánh giá.",
+          "Không công bố retrieval lift, MAP, nDCG hoặc quy mô dữ liệu nếu chưa có artifact đánh giá cuối cùng."
+        ]
+      },
+      "attribution": "Yelp Open Dataset"
+    },
+    {
+      "id": "face-attendance",
+      "number": "03",
+      "route": "/work/face-attendance",
+      "repository": "Face_detect",
+      "sourceStatus": "enabled",
+      "featured": false,
+      "type": {
+        "en": "Personal Project",
+        "vi": "Dự án cá nhân"
+      },
+      "title": {
+        "en": "Face Recognition Attendance System",
+        "vi": "Hệ thống chấm công nhận diện khuôn mặt"
+      },
+      "summary": {
+        "en": "A webcam-based attendance workflow using ArcFace embeddings, cosine matching, shifts, and attendance history.",
+        "vi": "Quy trình chấm công qua webcam dùng embedding ArcFace, đối sánh cosine, ca làm và lịch sử chấm công."
+      },
+      "stack": ["Python", "Flask", "OpenCV", "DeepFace", "ArcFace", "SQLite"],
+      "chapters": [
+        {
+          "number": "01",
+          "title": {
+            "en": "Attendance workflow",
+            "vi": "Quy trình chấm công"
+          },
+          "body": {
+            "en": "An enrolled reference is compared with a webcam capture after face detection and alignment. ArcFace produces embeddings, and cosine matching determines the attendance identity before check-in or check-out.",
+            "vi": "Ảnh tham chiếu đã đăng ký được so sánh với ảnh webcam sau bước phát hiện và căn chỉnh khuôn mặt. ArcFace tạo embedding, sau đó đối sánh cosine xác định danh tính trước khi check-in hoặc check-out."
+          }
+        },
+        {
+          "number": "02",
+          "title": {
+            "en": "Operational features",
+            "vi": "Tính năng vận hành"
+          },
+          "body": {
+            "en": "The application includes employee management, face enrolment, shift assignment, lateness handling, and attendance history.",
+            "vi": "Ứng dụng gồm quản lý nhân viên, đăng ký khuôn mặt, phân ca, xử lý đi trễ và lịch sử chấm công."
+          }
+        },
+        {
+          "number": "03",
+          "title": {
+            "en": "Boundary & next step",
+            "vi": "Giới hạn & bước tiếp theo"
+          },
+          "body": {
+            "en": "This is a prototype. Liveness detection is bypassed, so anti-spoofing is not active. A production version would need an evaluated liveness method, privacy controls, consent, retention policy, and security review.",
+            "vi": "Đây là bản nguyên mẫu. Kiểm tra liveness đang bị bỏ qua nên chống giả mạo chưa hoạt động. Bản production cần phương pháp liveness đã đánh giá, kiểm soát quyền riêng tư, cơ chế đồng thuận, chính sách lưu giữ và rà soát bảo mật."
+          }
+        }
+      ],
+      "workflow": [
+        "enrolled reference",
+        "webcam capture",
+        "detect and align",
+        "ArcFace embedding",
+        "cosine match",
+        "check-in or check-out"
+      ],
+      "requiredCaveats": {
+        "en": [
+          "Liveness detection is bypassed and anti-spoofing is not active.",
+          "Do not show a real face, accuracy claim, production-security claim, or database ERD."
+        ],
+        "vi": [
+          "Kiểm tra liveness đang bị bỏ qua và chống giả mạo chưa hoạt động.",
+          "Không hiển thị khuôn mặt thật, tuyên bố độ chính xác, tuyên bố bảo mật production hoặc ERD cơ sở dữ liệu."
+        ]
+      }
+    },
+    {
+      "id": "flight-booking",
+      "number": "04",
+      "route": "/work/flight-booking",
+      "repository": "web_maybay",
+      "sourceStatus": "enabled",
+      "featured": false,
+      "type": {
+        "en": "Team Project — 4 members",
+        "vi": "Dự án nhóm — 4 thành viên"
+      },
+      "title": {
+        "en": "Flight Booking Platform",
+        "vi": "Nền tảng đặt vé máy bay"
+      },
+      "summary": {
+        "en": "An end-to-end flight-booking prototype covering search, seat holding, passenger details, checkout, simulated payment, e-ticketing, and administration.",
+        "vi": "Nguyên mẫu đặt vé máy bay đầu-cuối gồm tìm kiếm, giữ ghế, thông tin hành khách, checkout, thanh toán mô phỏng, vé điện tử và quản trị."
+      },
+      "role": {
+        "en": "Full-stack development; frontend/API integration; booking-state and checkout workflows; customer and admin flows.",
+        "vi": "Phát triển full-stack; tích hợp frontend/API; luồng trạng thái đặt vé và checkout; luồng khách hàng và quản trị."
+      },
+      "stack": [
+        "React 19",
+        "Vite 8",
+        "React Router",
+        "ASP.NET Core",
+        ".NET 8",
+        "JWT",
+        "Entity Framework Core",
+        "SQLite"
+      ],
+      "chapters": [
+        {
+          "number": "01",
+          "title": {
+            "en": "Booking journey",
+            "vi": "Hành trình đặt vé"
+          },
+          "body": {
+            "en": "The customer flow covers flight search and selection, seat holding, passenger information, checkout validation, simulated payment, and e-ticket generation.",
+            "vi": "Luồng khách hàng gồm tìm và chọn chuyến bay, giữ ghế, nhập thông tin hành khách, kiểm tra checkout, thanh toán mô phỏng và tạo vé điện tử."
+          }
+        },
+        {
+          "number": "02",
+          "title": {
+            "en": "System & contribution",
+            "vi": "Hệ thống & đóng góp"
+          },
+          "body": {
+            "en": "The React client integrates with an ASP.NET Core API backed by EF Core and SQLite. My contribution covered full-stack development, frontend/API integration, booking-state and checkout workflows, and both customer and admin flows.",
+            "vi": "Client React tích hợp với API ASP.NET Core dùng EF Core và SQLite. Phần đóng góp của tôi gồm phát triển full-stack, tích hợp frontend/API, luồng trạng thái đặt vé và checkout, cùng các luồng khách hàng và quản trị."
+          }
+        },
+        {
+          "number": "03",
+          "title": {
+            "en": "Administration & boundary",
+            "vi": "Quản trị & giới hạn"
+          },
+          "body": {
+            "en": "The prototype also includes login, registration, travel information, and administration. Payment is simulated; no live production gateway or real transaction processing is claimed.",
+            "vi": "Nguyên mẫu còn có đăng nhập, đăng ký, thông tin hành trình và quản trị. Thanh toán chỉ được mô phỏng; dự án không tuyên bố có cổng production hay xử lý giao dịch thật."
+          }
+        }
+      ],
+      "implementedScope": [
+        "search",
+        "flight selection",
+        "seat holding",
+        "passenger data",
+        "checkout validation",
+        "payment simulation",
+        "e-ticketing",
+        "login and registration",
+        "travel information",
+        "administration"
+      ],
+      "teamSize": 4,
+      "requiredCaveats": {
+        "en": [
+          "Team project with four members; state the personal contribution separately.",
+          "Payment is simulated; no production payment gateway is claimed."
+        ],
+        "vi": [
+          "Dự án nhóm bốn thành viên; phần đóng góp cá nhân phải được nêu riêng.",
+          "Thanh toán được mô phỏng; không tuyên bố có cổng thanh toán production."
+        ]
+      }
+    }
+  ]
+}
